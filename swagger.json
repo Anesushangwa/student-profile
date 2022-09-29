@@ -5,7 +5,7 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "student-profile01.herokuapp.com",
+  "host": "localhost",
   "basePath": "/",
   "schemes": [
     "http"
