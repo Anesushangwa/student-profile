@@ -1,0 +1,22 @@
+###
+GET http://localhost:7070/students HTTP/1.1
+
+
+###node app.js
+
+### 
+
+POST   http://localhost:7070/students HTTP/1.1
+Content-Type: application/json
+
+
+# const loginValidation = {
+#   body: Joi.object({
+#     email: Joi.string()
+#       .email()
+#       .required(),
+#     password: Joi.string()
+#       .regex(/[a-zA-Z0-9]{3,30}/)
+#       .required(),
+#   }),
+# }
