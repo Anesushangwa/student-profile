@@ -3,9 +3,9 @@ const router = express.Router();
 const  validation = require("../validation/user.validation");
 const contactsController = require('../controllers/students');
 
-router.get('/', contactsController.getAll);
+// router.get('/', contactsController.getAll);
 
-router.get('/:id', contactsController.getSingle);
+// router.get('/:id', contactsController.getSingle);
 
 //Post Method
 router.post('/',   validation.saveContact, contactsController.newinfo)

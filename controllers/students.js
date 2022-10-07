@@ -2,26 +2,26 @@ const mongodb = require('../db/connection');
 const ObjectId = require('mongodb').ObjectId;
 // const {userDataValidate} = require("../validation/user.validation");
 
-const getAll = async (req, res, next) => {
-  const result = await mongodb.getDb().db('student_profile').collection('students').find();
-  result.toArray().then((lists) => {
-    res.setHeader('Content-Type', 'application/json');
-    res.status(200).json(lists);
-  });
-};
+// const getAll = async (req, res, next) => {
+//   const result = await mongodb.getDb().db('student_profile').collection('students').find();
+//   result.toArray().then((lists) => {
+//     res.setHeader('Content-Type', 'application/json');
+//     res.status(200).json(lists);
+//   });
+// };
 
-const getSingle = async (req, res, next) => {
-  const userId = new ObjectId(req.params.id);
-  const result = await mongodb
-    .getDb()
-    .db('student_profile')
-    .collection('students')
-    .find({ _id: userId });
-  result.toArray().then((lists) => {
-    res.setHeader('Content-Type', 'application/json');
-    res.status(200).json(lists[0]);
-  });
-};
+// const getSingle = async (req, res, next) => {
+//   const userId = new ObjectId(req.params.id);
+//   const result = await mongodb
+//     .getDb()
+//     .db('student_profile')
+//     .collection('students')
+//     .find({ _id: userId });
+//   result.toArray().then((lists) => {
+//     res.setHeader('Content-Type', 'application/json');
+//     res.status(200).json(lists[0]);
+//   });
+// };
 
 
 
@@ -161,6 +161,7 @@ const deleteinfo = async (req, res) => {
   };
 }
 
-  module.exports = { getAll, newinfo,updatestu,deleteinfo,getSingle}
+  module.exports = {  newinfo,updatestu,deleteinfo,}
 
 
+  // getSingle getAll
