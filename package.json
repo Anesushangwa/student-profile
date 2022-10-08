@@ -30,7 +30,7 @@
     "mocha": "^2.5.3"
   },
   "scripts": {
-    "test": "node app.js",
+    "start": "node app.js",
     "swagger-autogen": "node ./swagger.js"
   },
   "repository": {
